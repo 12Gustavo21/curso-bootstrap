@@ -11,13 +11,15 @@ body {
     padding: 4.375rem 0;
 }
 
-p, li {
+p,
+li {
     color: #444;
     font-size: 0.875rem;
 }
 
 /* Barra de navegação */
-header, .navbar {
+header,
+.navbar {
     background-color: #353D41;
     padding: 0.5rem 1rem;
 }
@@ -55,7 +57,8 @@ header, .navbar {
     padding: 0;
 }
 
-#mainSlider .carousel-inner, #mainSlider .carousel-item {
+#mainSlider .carousel-inner,
+#mainSlider .carousel-item {
     height: 90vh;
 }
 
@@ -103,4 +106,49 @@ header, .navbar {
 
 .carousel-indicators .active {
     background-color: #65DAF9;
+}
+
+/* Sobre a empresa */
+
+#about {
+    background-color: #F9F9F9;
+}
+
+.main-title {
+    color: #444;
+    margin: 0 0 4.0625rem 0;
+    font: 2.5rem 'Roboto', sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.main-title::after {
+    content: '';
+    position: absolute;
+    bottom: -1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15%;
+    height: 0.125rem;
+    background-color: #333;
+}
+
+.about-title {
+    color: #444;
+    font: bold 1.0625rem 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+#about-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#about-list li {
+    line-height: 1.875rem;
+}
+
+#about-list i {
+    color: #65DAF9;
+    margin-right: 0.9375rem;
 }
