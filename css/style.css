@@ -1,6 +1,23 @@
+:root {
+    --azul: #65DAF9;
+    --cinza: #444;
+    --cinza-after: #333;
+    --cinza-claro: #353D41;
+    --branco: #fff;
+    --branco-claro: #f9f9f9;
+    --roboto: 'Roboto', sans-serif;
+    --word-wrap: break-word;
+}
+
 /* Gerais */
+
+*::selection {
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--roboto);
 }
 
 .row {
@@ -13,14 +30,14 @@ body {
 
 p,
 li {
-    color: #444;
+    color: var(--cinza);
     font-size: 0.875rem;
 }
 
 /* Barra de navegação */
 header,
 .navbar {
-    background-color: #353D41;
+    background-color: var(--cinza-claro);
     padding: 0.5rem 1rem;
 }
 
@@ -35,16 +52,16 @@ header,
 
 .navbar-brand {
     padding: 0;
-    color: #fff;
+    color: var(--branco);
 }
 
 .navbar-brand:hover {
-    color: #fff;
+    color: var(--branco);
 }
 
 #navbar-links a {
     cursor: pointer;
-    color: #fff;
+    color: var(--branco);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -74,21 +91,21 @@ header,
 #mainSlider .carousel-caption h2 {
     font-size: 3.125rem;
     margin-bottom: 1.875rem;
-    word-wrap: break-word;
+    word-wrap: var(--word-wrap);
 }
 
 #mainSlider .carousel-caption p {
     font-size: 1.375rem;
     font-weight: 300;
     margin-bottom: 6.25rem;
-    color: #fff;
-    word-wrap: break-word;
+    color: var(--branco);
+    word-wrap: var(--word-wrap);
 }
 
 .main-btn {
     text-decoration: none;
-    background-color: #65DAF9;
-    color: #fff;
+    background-color: var(--azul);
+    color: var(--branco);
     text-transform: uppercase;
     width: 12.5rem;
     height: 3.75rem;
@@ -100,24 +117,24 @@ header,
 
 .main-btn:hover {
     background-color: transparent;
-    color: #fff;
-    border-color: #65DAF9;
+    color: var(--branco);
+    border-color: var(--azul);
 }
 
 .carousel-indicators .active {
-    background-color: #65DAF9;
+    background-color: var(--azul);
 }
 
 /* Sobre a empresa */
 
-#about {
-    background-color: #F9F9F9;
+#about-area {
+    background-color: var(--branco-claro);
 }
 
 .main-title {
-    color: #444;
+    color: var(--cinza);
     margin: 0 0 4.0625rem 0;
-    font: 2.5rem 'Roboto', sans-serif;
+    font: 2.5rem var(--roboto);
     text-align: center;
     position: relative;
 }
@@ -130,12 +147,12 @@ header,
     transform: translateX(-50%);
     width: 15%;
     height: 0.125rem;
-    background-color: #333;
+    background-color: var(--cinza-after);
 }
 
 .about-title {
-    color: #444;
-    font: bold 1.0625rem 'Roboto', sans-serif;
+    color: var(--cinza);
+    font: bold 1.0625rem var(--roboto);
     text-transform: uppercase;
 }
 
@@ -149,6 +166,34 @@ header,
 }
 
 #about-list i {
-    color: #65DAF9;
+    color: var(--azul);
     margin-right: 0.9375rem;
+}
+
+/* Serviços */
+
+.service-box {
+    text-align: center;
+    margin-bottom: 6.125rem;
+}
+
+.service-box i,
+.service-box h4 {
+    transition: .5s linear;
+}
+
+.service-box i {
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
+    color: var(--cinza);
+}
+
+.service-box h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.service-box:hover>i,
+.service-box:hover>h4 {
+    color: var(--azul);
 }
