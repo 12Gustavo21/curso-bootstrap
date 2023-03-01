@@ -1,202 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- FONTS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
-        <!-- STYLES -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="stylesheet" href="/curso-bootstrap/css/style.css">
+    <!-- STYLES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
 
-        <!-- SCRIPTS -->
-        <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-            crossorigin="anonymous"></script>
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 
-        <!-- FONT AWESOME-->
-        <script src="https://kit.fontawesome.com/8f604c477e.js" crossorigin="anonymous"></script>
+    <!-- FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/8f604c477e.js" crossorigin="anonymous"></script>
 
-        <!-- PROGRESS BAR -->
-        <script src="./js/progressbar.min.js"></script>
+    <!-- PROGRESS BAR -->
+    <script src="./js/progressbar.min.js"></script>
 
-        <!-- PARALLAX -->
-        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <!-- PARALLAX -->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 
-        <title>hDC Agency - a sua agência web</title>
-        <link rel="shortcut icon" href="img/hdcagency_logo.svg" type="image/x-icon">
-    </head>
+    <title>hDC Agency - a sua agência web</title>
+    <link rel="shortcut icon" href="img/hdcagency_logo.svg" type="image/x-icon">
+</head>
 
-    <body>
-        <header>
-            <section class="container" id="nav-container">
-                <nav class="navbar navbar-expand-lg fixed-top">
-                    <a href="#" class="navbar-brand">
-                        <img id="logo" src="img/hdcagency_logo.svg" alt="hDC Agency"> hDC Agency
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
-                        aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <section class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                        <section class="navbar-nav">
-                            <a class="nav-item nav-link" id="home-menu">Home</a>
-                            <a class="nav-item nav-link" id="about-menu">A agência</a>
-                            <a class="nav-item nav-link" id="services-menu">Serviços</a>
-                            <a class="nav-item nav-link" id="team-menu">Time</a>
-                            <a class="nav-item nav-link" id="portfolio-menu">Projetos</a>
-                            <a class="nav-item nav-link" id="contact-menu">Contato</a>
+<body>
+    <header>
+        <section class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="#" class="navbar-brand">
+                    <img id="logo" src="img/hdcagency_logo.svg" alt="hDC Agency"> hDC Agency
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <section class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <section class="navbar-nav">
+                        <a class="nav-item nav-link" id="home-menu">Home</a>
+                        <a class="nav-item nav-link" id="about-menu">A agência</a>
+                        <a class="nav-item nav-link" id="services-menu">Serviços</a>
+                        <a class="nav-item nav-link" id="team-menu">Time</a>
+                        <a class="nav-item nav-link" id="portfolio-menu">Projetos</a>
+                        <a class="nav-item nav-link" id="contact-menu">Contato</a>
+                    </section>
+                </section>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="container-fluid">
+            <section id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+                <section class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </section>
+                <section class="carousel-inner">
+                    <section class="carousel-item active">
+                        <img src="img/banner1.png" class="d-block w-100" alt="Projetos de e-commerce">
+                        <section class="carousel-caption d-none d-md-block">
+                            <h2>Quer criar um e-commerce?</h2>
+                            <p>Conte conosco temos mais de 30 lojas no portfólio.</p>
+                            <a href="#" class="main-btn">Ver portfólio</a>
                         </section>
                     </section>
-                </nav>
+                    <section class="carousel-item">
+                        <img src="img/banner2.png" class="d-block w-100" alt="Engenharia de Software">
+                        <section class="carousel-caption d-none d-md-block">
+                            <h2>Está querendo tirar o projeto do papel?</h2>
+                            <p>Nossa equipe de engenharia de software está pronta para lhe atender.</p>
+                            <a href="#" class="main-btn">Entre em contato</a>
+                        </section>
+                    </section>
+                    <section class="carousel-item">
+                        <img src="img/banner3.png" class="d-block w-100" alt="Manuntenção em Software">
+                        <section class="carousel-caption d-none d-md-block">
+                            <h2>Está buscando manuntenção no seu software?</h2>
+                            <p>A hDC conta com engenheiros altamente qualificados para resolver seu problema.</p>
+                            <a href="#" class="main-btn">Entre em contato</a>
+                        </section>
+                    </section>
+                </section>
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </section>
-        </header>
-        <main>
-            <section class="container-fluid">
-                <section id="mainSlider" class="carousel slide" data-bs-ride="carousel">
-                    <section class="carousel-indicators">
-                        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </section>
-                    <section class="carousel-inner">
-                        <section class="carousel-item active">
-                            <img src="img/banner1.png" class="d-block w-100" alt="Projetos de e-commerce">
-                            <section class="carousel-caption d-none d-md-block">
-                                <h2>Quer criar um e-commerce?</h2>
-                                <p>Conte conosco temos mais de 30 lojas no portfólio.</p>
-                                <a href="#" class="main-btn">Ver portfólio</a>
-                            </section>
+            <!-- Sobre a empresa -->
+            <section id="about-area">
+                <section class="container">
+                    <section class="row">
+                        <section class="col-12">
+                            <h3 class="main-title">Sobre a hDC Agency</h3>
                         </section>
-                        <section class="carousel-item">
-                            <img src="img/banner2.png" class="d-block w-100" alt="Engenharia de Software">
-                            <section class="carousel-caption d-none d-md-block">
-                                <h2>Está querendo tirar o projeto do papel?</h2>
-                                <p>Nossa equipe de engenharia de software está pronta para lhe atender.</p>
-                                <a href="#" class="main-btn">Entre em contato</a>
-                            </section>
+                        <section class="col-md-6">
+                            <img class="img-fluid" src="img/agencia.jpg" alt="Agência hDC">
                         </section>
-                        <section class="carousel-item">
-                            <img src="img/banner3.png" class="d-block w-100" alt="Manuntenção em Software">
-                            <section class="carousel-caption d-none d-md-block">
-                                <h2>Está buscando manuntenção no seu software?</h2>
-                                <p>A hDC conta com engenheiros altamente qualificados para resolver seu problema.</p>
-                                <a href="#" class="main-btn">Entre em contato</a>
-                            </section>
-                        </section>
-                    </section>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </section>
-                <!-- Sobre a empresa -->
-                <section id="about-area">
-                    <section class="container">
-                        <section class="row">
-                            <section class="col-12">
-                                <h3 class="main-title">Sobre a hDC Agency</h3>
-                            </section>
-                            <section class="col-md-6">
-                                <img class="img-fluid" src="img/agencia.jpg" alt="Agência hDC">
-                            </section>
-                            <section class="col-md-6">
-                                <h3 class="about-title">Uma agência que pensa no futuro</h3>
-                                <p>Nossos projetos são adaptados ao cliente e seu propósito.</p>
-                                <p>Após a especificação do projeto os arquitetos de software definirão as melhores
-                                    tecnologias para seu projeto.</p>
-                                <p>E nossos designers trabalharão na sua interface para impulsionar o negócio.</p>
-                                <p>Veja outros diferenciais:</p>
-                                <ul id="about-list">
-                                    <li><i class="fas fa-check"></i>Utilização de Machine Learning</li>
-                                    <li><i class="fas fa-check"></i>Layout responsivo para todos os dispositivos</li>
-                                    <li><i class="fas fa-check"></i>Integração com diversos sistemas do mercado</li>
-                                    <li><i class="fas fa-check"></i>Sistema de pagamento próprio</li>
-                                    <li><i class="fas fa-check"></i>Desenvolvimento com metodologia ágil</li>
-                                </ul>
-                            </section>
+                        <section class="col-md-6">
+                            <h3 class="about-title">Uma agência que pensa no futuro</h3>
+                            <p>Nossos projetos são adaptados ao cliente e seu propósito.</p>
+                            <p>Após a especificação do projeto os arquitetos de software definirão as melhores
+                                tecnologias para seu projeto.</p>
+                            <p>E nossos designers trabalharão na sua interface para impulsionar o negócio.</p>
+                            <p>Veja outros diferenciais:</p>
+                            <ul id="about-list">
+                                <li><i class="fas fa-check"></i>Utilização de Machine Learning</li>
+                                <li><i class="fas fa-check"></i>Layout responsivo para todos os dispositivos</li>
+                                <li><i class="fas fa-check"></i>Integração com diversos sistemas do mercado</li>
+                                <li><i class="fas fa-check"></i>Sistema de pagamento próprio</li>
+                                <li><i class="fas fa-check"></i>Desenvolvimento com metodologia ágil</li>
+                            </ul>
                         </section>
                     </section>
                 </section>
-                <!-- Serviços da empresa -->
-                <section id="services-area">
-                    <section class="container">
-                        <section class="row">
-                            <section class="col-12">
-                                <h3 class="main-title">Nossas especialidades</h3>
+            </section>
+            <!-- Serviços da empresa -->
+            <section id="services-area">
+                <section class="container">
+                    <section class="row">
+                        <section class="col-12">
+                            <h3 class="main-title">Nossas especialidades</h3>
+                        </section>
+                        <section class="col-md-4">
+                            <section class="service-box">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h4>Aplicativos Nativos</h4>
+                                <p>Utilizamos o real poder dos dispositivos móveis construindo aplicativos nativos.</p>
                             </section>
-                            <section class="col-md-4">
-                                <section class="service-box">
-                                    <i class="fas fa-mobile-alt"></i>
-                                    <h4>Aplicativos Nativos</h4>
-                                    <p>Utilizamos o real poder dos dispositivos móveis construindo aplicativos nativos.</p>
-                                </section>
+                        </section>
+                        <section class="col-md-4">
+                            <section class="service-box">
+                                <i class="fas fa-shopping-cart"></i>
+                                <h4>E-commerces</h4>
+                                <p>Temos uma plataforma própria de e-commerce que se adapta a qualquer regra de
+                                    nenegócio (B2C e B2B).</p>
                             </section>
-                            <section class="col-md-4">
-                                <section class="service-box">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    <h4>E-commerces</h4>
-                                    <p>Temos uma plataforma própria de e-commerce que se adapta a qualquer regra de
-                                        nenegócio (B2C e B2B).</p>
-                                </section>
+                        </section>
+                        <section class="col-md-4">
+                            <section class="service-box">
+                                <i class="fas fa-paint-brush"></i>
+                                <h4>Design Criativo</h4>
+                                <p>Nossos designers são especializados em UI/UX e também possuem vasta experiência no
+                                    mercado de software.</p>
                             </section>
-                            <section class="col-md-4">
-                                <section class="service-box">
-                                    <i class="fas fa-paint-brush"></i>
-                                    <h4>Design Criativo</h4>
-                                    <p>Nossos designers são especializados em UI/UX e também possuem vasta experiência no
-                                        mercado de software.</p>
-                                </section>
+                        </section>
+                        <section class="col-md-4">
+                            <section class="service-box">
+                                <i class="fab fa-google"></i>
+                                <h4>Experts em SEO</h4>
+                                <p>Com nosso serviço de marketing seu site será melhor posicionado no Google e venderá
+                                    mais.</p>
                             </section>
-                            <section class="col-md-4">
-                                <section class="service-box">
-                                    <i class="fab fa-google"></i>
-                                    <h4>Experts em SEO</h4>
-                                    <p>Com nosso serviço de marketing seu site será melhor posicionado no Google e venderá
-                                        mais.</p>
-                                </section>
+                        </section>
+                        <section class="col-md-4">
+                            <section class="service-box">
+                                <i class="fas fa-hands-helping"></i>
+                                <h4>Suport 24/7</h4>
+                                <p>Você sempre terá alguem da equipe disponível para suporte, em diferentes plataformas.
+                                    (chat, email e sype).</p>
                             </section>
-                            <section class="col-md-4">
-                                <section class="service-box">
-                                    <i class="fas fa-hands-helping"></i>
-                                    <h4>Suport 24/7</h4>
-                                    <p>Você sempre terá alguem da equipe disponível para suporte, em diferentes plataformas.
-                                        (chat, email e sype).</p>
-                                </section>
-                            </section>
-                            <section class="col-md-4">
-                                <section class="service-box">
-                                    <i class="fas fa-server"></i>
-                                    <h4>Experiência em servidores</h4>
-                                    <p>Garantimos uptime e também rápido tempo de resposta do seu site para o seu cliente.
-                                    </p>
-                                </section>
+                        </section>
+                        <section class="col-md-4">
+                            <section class="service-box">
+                                <i class="fas fa-server"></i>
+                                <h4>Experiência em servidores</h4>
+                                <p>Garantimos uptime e também rápido tempo de resposta do seu site para o seu cliente.
+                                </p>
                             </section>
                         </section>
                     </section>
-        </main>
-        <script src="js/scripts.js"></script>
-    </body>
+                </section>
+            </section>
+            <!-- Dados da empresa -->
+            <section id="data-area">
+                <section class="container">
+                    <section class="row">
+                        <section class="col-md-3 circle-box">
+                            <section id="circleA"></section>
+                            <p>Projetos entregues</p>
+                        </section>
+                        <section class="col-md-3 circle-box">
+                            <section id="circleB"></section>
+                            <p>Clientes Felizes</p>
+                        </section>
+                        <section class="col-md-3 circle-box">
+                            <section id="circleC"></section>
+                            <p>Colaboradores</p>
+                        </section>
+                        <section class="col-md-3 circle-box">
+                            <section id="circleD"></section>
+                            <p>Cafézinhos</p>
+                        </section>
+                    </section>
+                </section>
+            </section>
+    </main>
+    <script src="/js/scripts.js"></script>
+    <script src="/js/progressbar.min.js"></script>
+</body>
 
 </html>

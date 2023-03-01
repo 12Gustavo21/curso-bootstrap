@@ -197,3 +197,21 @@ header,
 .service-box:hover>h4 {
     color: var(--azul);
 }
+
+/* Dados */
+
+.circle-box section {
+    padding: 0 2.5rem;
+}
+
+.progressbar-text {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#data-area p {
+    color: var(--branco);
+    text-align: center;
+    font-size: 1.625rem;
+    margin-top: 1.25rem;
+}
